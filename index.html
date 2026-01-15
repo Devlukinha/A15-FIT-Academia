@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academia A15 FIT</title>
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+     <script src="https://kit.fontawesome.com/14cc984910.js" crossorigin="anonymous"></script>
+     <script src="./js/menu.js" defer></script>
+    <link rel="stylesheet" href="./css/style.css">
+     
+</head>
+<body class="overflow-hidden">
+    <header class="bg-[url(/assets/image-fundo.jpg)] bg-no-repeat bg-cover bg-[70%_25%] h-[70vh] relative">
+        <!--Menu mobile-->
+       <nav class="flex justify-between items-center pt-4 pl-7 pr-7">
+            <div>
+                <img src="./assets/logo a15 fit alta resolucao-sem-fundo.png" alt="logotipo da academia" class="w-16">
+            </div>
+
+            <button id="btn-abrir-menu">
+                <i class="fa-solid fa-bars text-white text-3xl cursor-pointer "></i>
+            </button>
+       </nav>
+
+       <div class="bg-black opacity-85 w-[50vw] h-[100vh] absolute top-0 right-0 translate-x-100 ease-out-in duration-500 " id="menu-mobile">
+
+        <button>
+            <i class="fa-solid fa-x text-white text-3xl mt-10 ml-5 mb-10 cursor-pointer hover:text-blue-500" id="btn-fechar-menu"></i>
+        </button>
+
+
+            <ul class="flex flex-col gap-3 text-white">
+                <li class=" hover:bg-blue-500 hover:text-black transition-all duration-500 flex items-center justify-start gap-3 pt-3 pl-7 pb-3 cursor-pointer">
+                    <i class="fa-solid fa-magnifying-glass text-xl"></i>
+                    <a href="" class="text-xl">Conheça</a>
+                </li>
+
+                <li class=" hover:bg-blue-500 hover:text-black transition-all duration-500 flex items-center justify-start gap-3 pt-3 pl-7 pb-3 cursor-pointer">
+                    <i class="fa-solid fa-sheet-plastic text-xl"></i> 
+                    <a href="" class="text-xl">Planos</a>
+                </li>
+
+                <li class=" hover:bg-blue-500 hover:text-black transition-all duration-500 flex items-center justify-start gap-3 pt-3 pl-6 pb-3 cursor-pointer">
+                    <i class="fa-solid fa-dumbbell text-xl"></i> 
+                    <a href="" class="text-xl">Espaço</a>
+                </li>
+
+                <li class=" hover:bg-blue-500 hover:text-black transition-all duration-500 flex items-center justify-start gap-3 pt-3 pl-7 pb-3">
+                    <i class="fa-solid fa-circle-info text-xl"></i> 
+                    <a href="" class="text-xl">Sobre</a>
+                </li>
+
+                <li class=" hover:bg-blue-500 hover:text-black transition-all duration-500 flex items-center justify-start gap-3 pt-3 pl-7 pb-3 cursor-pointer">
+                    <i class="fa-solid fa-location-arrow text-xl"></i>
+                     <a href="" class="text-xl">Localização</a>
+                </li>
+            </ul>
+       </div>
+
+       <!--Conteudo-->
+        <div class="max-w-[280px] ml-7 flex flex-col gap-3 mt-5 ">
+            <h1 class="bebasFont text-white text-4xl">
+                Transforme seu <span class="text-blue-500">corpo</span>, fortaleça sua <span class="text-blue-500">mente</span>.
+            </h1>
+
+            <p class="bebasFont text-white text-xl max-w-[200px]">
+                Aqui, cada treino é um passo para sua
+                melhor versão.
+            </p>
+
+            <button class="bebasFont text-blue-500 border-2 border-blue-500 rounded-sm h-7 w-32 hover:bg-blue-500 hover:text-gray-950 transition-all duration-300 cursor-pointer text-sm">
+                Quero me matricular
+            </button>
+            </div>
+    </header>
+
+    <!--Sessao PORQUE TREINAR CONOSCO?-->
+    <section>
+        <div>
+            <h1 class=" bebasFont">Porque treinar conosco?</h1>
+        </div>
+    </section>
+</body>
+</html>
