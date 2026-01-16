@@ -7,3 +7,11 @@
 .mondaFont {
     font-family: "Monda";
 }
+
+.ativo {
+    display: flex;
+}
+
+.desativado {
+    display: none;
+}
