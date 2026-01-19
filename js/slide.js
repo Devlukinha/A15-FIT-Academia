@@ -14,4 +14,4 @@ setInterval(() => {
     }
 
     track.style.transform = `translateX(-${indexSlide * larguraSlide}px)`
-}, 3000)
+}, 2500)

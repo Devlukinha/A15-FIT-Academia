@@ -9,11 +9,10 @@
      <script src="./js/slide.js" defer></script>
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
 </head>
-<body class="overflow-x-hidden">
+<body>
 
-    <header class="bg-[url(./assets/image-fundo.jpg)] bg-no-repeat bg-cover bg-[70%_25%] h-[70vh] relative overflow-x-hidden overflow-y-hidden ">
+    <header class="bg-[url(./assets/image-fundo.jpg)] bg-no-repeat bg-cover bg-[70%_25%] h-[70vh] relative overflow-hidden ">
         <!--Menu mobile-->
        <nav class="flex justify-between items-center pt-4 pl-7 pr-7">
             <div>
@@ -25,7 +24,7 @@
             </button>
        </nav>
 
-       <div class="bg-black opacity-85 w-[50vw] h-[100vh] fixed top-0 right-0 translate-x-100 ease-out-in duration-500" id="menu-mobile">
+       <div class="bg-black opacity-85 w-[50vw] h-[100vh] fixed top-0 right-0 translate-x-100 ease-out-in duration-500 z-10" id="menu-mobile">
 
         <button>
             <i class="fa-solid fa-x text-white text-3xl mt-10 ml-5 mb-10 cursor-pointer hover:text-[#2288C7]" id="btn-fechar-menu"></i>
@@ -35,27 +34,23 @@
             <ul class="flex flex-col gap-3 text-white">
                 <li class=" hover:bg-[#2288C7] hover:text-black transition-all duration-500 flex items-center justify-start gap-3 pt-3 pl-7 pb-3 cursor-pointer">
                     <i class="fa-solid fa-magnifying-glass text-xl"></i>
-                    <a href="" class="text-xl">Conheça</a>
+                    <a href="#conheca" class="text-xl">Conheça</a>
                 </li>
 
                 <li class=" hover:bg-[#2288C7] hover:text-black transition-all duration-500 flex items-center justify-start gap-3 pt-3 pl-7 pb-3 cursor-pointer">
                     <i class="fa-solid fa-sheet-plastic text-xl"></i> 
-                    <a href="" class="text-xl">Planos</a>
+                    <a href="#planos" class="text-xl">Planos</a>
                 </li>
 
-                <li class=" hover:bg-[#2288C7] hover:text-black transition-all duration-500 flex items-center justify-start gap-3 pt-3 pl-6 pb-3 cursor-pointer">
-                    <i class="fa-solid fa-dumbbell text-xl"></i> 
-                    <a href="" class="text-xl">Espaço</a>
-                </li>
-
+    
                 <li class=" hover:bg-[#2288C7] hover:text-black transition-all duration-500 flex items-center justify-start gap-3 pt-3 pl-7 pb-3">
                     <i class="fa-solid fa-circle-info text-xl"></i> 
-                    <a href="" class="text-xl">Sobre</a>
+                    <a href="#sobre" class="text-xl">Sobre</a>
                 </li>
 
                 <li class=" hover:bg-[#2288C7] hover:text-black transition-all duration-500 flex items-center justify-start gap-3 pt-3 pl-7 pb-3 cursor-pointer">
                     <i class="fa-solid fa-location-arrow text-xl "></i>
-                     <a href="" class="text-xl">Localização</a>
+                     <a href="#local" class="text-xl">Localização</a>
                 </li>
             </ul>
        </div>
@@ -78,7 +73,7 @@
     </header>
 
     <!--Sessao PORQUE TREINAR CONOSCO?-->
-    <section class="flex flex-col justify-center items-center h-[470px] bg-[#1E1E1E]">
+    <section class="flex flex-col justify-center items-center h-[470px] bg-[#1E1E1E]" id="conheca">
 
         <div>
             <h1 class=" bebasFont text-4xl text-center text-[#2288C7]">Porque treinar conosco?</h1>
@@ -114,7 +109,7 @@
 
     <!--Sessao de PLANOS-->
 
-    <section class="mt-10 flex flex-col items-center gap-7">
+    <section class="mt-10 flex flex-col items-center gap-7" id="planos">
         <div>
             <h1 class="bebasFont text-center text-[#1E1E1E] text-4xl">Conheça nossos planos</h1>
         </div>
@@ -309,7 +304,99 @@
         </div>
     </section>
 
+    <!--SOBRE a ACADEMIA-->
+    <section class="mt-8 bg-[#1E1E1E] flex flex-col items-center gap-5" id="sobre">
+
+        <div class="mt-8">
+            <h1 class="bebasFont text-[#2288C7] text-4xl">Sobre a Academia</h1>
+        </div>
+
+        <div class="flex flex-col items-center">
+            <img src="./assets/Ambiente-grad.jpg" alt="" class="w-[330px] rounded-xl">
+
+            <p class="max-w-[330px] text-white mondaFont text-justify mt-5 indent-5 mb-12">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique odio placeat voluptatem nihil velit corrupti ipsa voluptate nisi ea obcaecati. Tempore corporis quae sequi placeat maiores quibusdam nisi architecto fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse molestias nesciunt dolores necessitatibus nobis officia accusamus deserunt incidunt vel enim repudiandae iusto quam aperiam minus modi impedit omnis, eius ut!
+            </p>
+        </div>
+    </section>
+
+    <!--CTA da Academia--> 
+    <section  class="bg-[url(./assets/Foto-CTA.jpg)] bg-cover bg-no-repeat bg-[52%_25%] h-[450px] w-[100vw] relative z-10 flex flex-col items-center justify-center ">
+
+        <div class=" relative z-50 max-w-[330px] flex flex-col items-center gap-5 mt-10">
+            <h1 class="bebasFont text-5xl text-white text-center">
+                Dê o <span class="text-[#2288C7]">primeiro</span> passo
+                para a sua <span class="text-[#2288C7]">evolução </span>
+            </h1>
+
+            <p class="mondaFont text-white text-xl text-center">
+                Não perca tempo! Garanta sua vaga e 
+                faça parte da nossa academia.
+            </p>
+
+            <button class="bebasFont text-[#2288C7] border-3 border-[#2288C7] rounded-xl h-10 w-56 hover:bg-[#2288C7] hover:text-gray-950 transition-all duration-500 cursor-pointer text-xl tracking-wide ">
+                Matricule-se agora
+            </button>
+        </div>
+
+
+        <div class="absolute bg-black top-0 right-0 left-0 bottom-0 opacity-45">
+        </div>
+    </section>
+
+
+    <!--Localizaçao e horario de funcionamento-->
+    <section class="flex flex-col items-center mt-10 gap-10" id="local">
+
+        <div class="flex flex-col items-center gap-3">
+            <h1 class="bebasFont text-4xl text-[#1E1E1E]">Nosso Horários</h1>
+
+            <div class="flex flex-col items-center">
+                <p class="mondaFont text-xl">Segunda à Sexta</p>
+                <p class="mondaFont text-xl font-bold">7:00 às 22:00</p>
+            </div>
+
+            <div class="flex flex-col items-center">
+                 <p class="mondaFont text-xl">Sábados e Domingos</p>
+                <p class="mondaFont text-xl font-bold">8:00 às 20:00</p>
+            </div>
+        </div>
+
+        <div class="flex flex-col items-center gap-3">
+            <h1 class="bebasFont text-4xl text-[#1E1E1E]">Nossa Localização</h1>
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7174.638774534198!2d-46.99956375879977!3d-18.92889042898218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94afba90b4fbc31b%3A0x2c1cb36c54e64bda!2sS%C3%A3o%20Judas%20Tadeu%2C%20Patroc%C3%ADnio%20-%20MG%2C%2038740-000!5e1!3m2!1spt-BR!2sbr!4v1768849783885!5m2!1spt-BR!2sbr" width="330" height="330" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-2xl"></iframe>
+            </div>
+        </div>
+    </section>            
+
+    <footer class="bg-[#1E1E1E] flex flex-col items-center mt-15">
+            <div class="w-24 mt-5">
+                <img src="./assets/logo.png" alt="">
+            </div>
+
+            <ul class="flex flex-col gap-2 mb-7">
+                <li class="flex flex-row items-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-2xl text-green-500"></i>
+                    <p class="text-white">(34) 9999-9999</p>
+                </li>
+                <li class="flex flex-row items-center gap-2">
+                    <i class="fa-brands fa-instagram text-2xl text-pink-600"></i>
+                    <p class="text-white">@a15fit_academia</p>
+                </li>
+            </ul>
+
+            <div class="mb-3">
+                <p class="text-white text-sm">A15 FIT - Todos os direitos reservado, 2026</p>
+            </div>
+
+            <div>
+                
+                <p class="text-white text-sm">Desenvolvido por <a href="https://www.instagram.com/lucas_henrib/" class="text-blue-400">@LucasDev</a></p>
+            </div>
+    </footer>
 
 </body>
 
 </html>
+         
