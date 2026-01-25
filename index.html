@@ -12,19 +12,43 @@
 </head>
 <body>
 
-    <header class="bg-[url(./assets/image-fundo.jpg)] bg-no-repeat bg-cover bg-[70%_25%] h-[70vh] relative overflow-hidden ">
+    <header class="bg-[url(./assets/image-fundo.jpg)] bg-no-repeat bg-cover bg-[70%_25%] h-[70vh] relative overflow-hidden lg:h-[100vh]">
         <!--Menu mobile-->
-       <nav class="flex justify-between items-center pt-4 pl-7 pr-7">
+       <nav class="flex justify-between items-center pt-4 pl-7 pr-7 lg:pl-20 lg:pr-20">
             <div>
-                <img src="./assets/logo.png" alt="logotipo da academia" class="w-16">
+                <img src="./assets/logo.png" alt="logotipo da academia" class="w-16 sm:w-24 lg:w-28">
             </div>
 
-            <button id="btn-abrir-menu">
-                <i class="fa-solid fa-bars text-white text-3xl cursor-pointer "></i>
+            
+            <ul class="flex  gap-3 text-white">
+                <li class=" hover:text-[#2288C7] hover:scale-110 transition-all duration-500 flex items-center justify-start gap-3 pt-3 pl-7 pb-1 cursor-pointer">
+                    <i class="fa-solid fa-magnifying-glass text-xl"></i>
+                    <a href="#conheca" class="text-xl">Conheça</a>
+                </li>
+
+                <li class=" hover:text-[#2288C7] hover:scale-110 transition-all duration-500 flex items-center justify-start gap-3 pt-3 pl-7 pb-1 cursor-pointer">
+                    <i class="fa-solid fa-sheet-plastic text-xl"></i> 
+                    <a href="#planos" class="text-xl">Planos</a>
+                </li>
+
+    
+                <li class=" hover:text-[#2288C7] hover:scale-110 transition-all duration-500 flex items-center justify-start gap-3 pt-3 pl-7 pb-1">
+                    <i class="fa-solid fa-circle-info text-xl"></i> 
+                    <a href="#sobre" class="text-xl">Sobre</a>
+                </li>
+
+                <li class=" hover:text-[#2288C7] hover:scale-110 transition-all duration-500 flex items-center justify-start gap-3 pt-3 pl-7 pb-1 cursor-pointer">
+                    <i class="fa-solid fa-location-arrow text-xl "></i>
+                     <a href="#local" class="text-xl">Localização</a>
+                </li>
+            </ul>
+
+            <button id="btn-abrir-menu" class="lg:hidden">
+                <i class="fa-solid fa-bars text-white text-3xl cursor-pointer"></i>
             </button>
        </nav>
 
-       <div class="bg-black opacity-85 w-[50vw] h-[100vh] fixed top-0 right-0 translate-x-100 ease-out-in duration-500 z-10" id="menu-mobile">
+       <div class="bg-black opacity-85 w-[50vw] h-[100vh] fixed top-0 right-0 translate-x-100 ease-out-in duration-500 z-10 sm:w-[30vw] lg:hidden" id="menu-mobile">
 
         <button>
             <i class="fa-solid fa-x text-white text-3xl mt-10 ml-5 mb-10 cursor-pointer hover:text-[#2288C7]" id="btn-fechar-menu"></i>
@@ -56,95 +80,127 @@
        </div>
 
        <!--Conteudo-->
-        <div class="max-w-[280px] ml-7 flex flex-col gap-3 mt-5 ">
-            <h1 class="bebasFont text-white text-4xl ">
+        <div class="max-w-[280px] ml-20 flex flex-col gap-3 mt-5 sm:max-w-[380px] lg:max-w-[780px] lg:gap-12">
+            <h1 class="bebasFont text-white text-4xl sm:text-5xl lg:text-8xl">
                 Transforme seu <span class="text-[#2288C7]">corpo</span>, fortaleça sua <span class="text-[#2288C7]">mente</span>.
             </h1>
 
-            <p class="bebasFont text-white text-xl max-w-[200px]">
+            <p class="bebasFont text-white text-xl max-w-[200px] sm:max-w-[300px] sm:text-2xl lg:text-4xl lg:max-w-[780px]">
                 Aqui, cada treino é um passo para sua
                 melhor versão.
             </p>
 
-            <button class="bebasFont text-[#2288C7] border-2 border-[#2288C7] rounded-sm h-7 w-32 hover:bg-[#2288C7] hover:text-gray-950 transition-all duration-500 cursor-pointer text-sm ">
+            <button class="bebasFont text-[#2288C7] border-2 border-[#2288C7] rounded-sm h-7 w-32 hover:bg-[#2288C7] hover:text-gray-950 transition-all duration-500 cursor-pointer text-sm sm:w-64 sm:h-10 sm:text-2xl lg:w-96 lg:h-16 lg:text-4xl">
                 Quero me matricular
             </button>
             </div>
     </header>
 
+   
+
     <!--Sessao PORQUE TREINAR CONOSCO?-->
-    <section class="flex flex-col justify-center items-center h-[470px] bg-[#1E1E1E]" id="conheca">
+    <section class="flex flex-col justify-center items-center h-[670px] bg-[#1E1E1E] lg:h-[700px]" id="conheca">
 
         <div>
-            <h1 class=" bebasFont text-4xl text-center text-[#2288C7]">Porque treinar conosco?</h1>
+            <h1 class=" bebasFont text-4xl text-center text-[#2288C7] sm:text-5xl lg:text-6xl">Porque treinar conosco?</h1>
         </div>  
 
-        <div class="w-[330px] overflow-hidden mt-10 relative rounded-xl">
+        
+
+        <div class="w-[330px] overflow-hidden mt-10 relative rounded-xl sm:w-[430px] lg:hidden">
 
             <div class="flex transition-transform duration-700" id="track">
 
-                <div class="bg-[url(./assets/Ambiente-grad.jpg)] bg-cover bg-no-repeat w-[330px] h-[300px] flex flex-col items-center justify-end rounded-xl flex-shrink-0">
-                    <div class="text-white bebasFont text-3xl text-center mb-7">
+                <div class="bg-[url(./assets/Ambiente-grad.jpg)] bg-cover bg-no-repeat w-[330px] h-[300px] flex flex-col items-center justify-end rounded-xl flex-shrink-0 sm:w-[430px] sm:h-[430px]">
+                    <div class="text-white bebasFont text-3xl text-center mb-7 sm:text-5xl">
                         <h2>Ambiente</h2>
                         <h2>Moderno</h2>
                     </div>
                 </div>
 
-                <div class="bg-[url(./assets/Personal-grad.jpg)] bg-cover bg-no-repeat w-[330px] h-[300px] flex flex-col items-center justify-end rounded-xl flex-shrink-0">
-                    <div class="text-white bebasFont text-3xl text-center mb-7">
+                <div class="bg-[url(./assets/Personal-grad.jpg)] bg-cover bg-no-repeat w-[330px] h-[300px] flex flex-col items-center justify-end rounded-xl flex-shrink-0 sm:w-[430px] sm:h-[430px]">
+                    <div class="text-white bebasFont text-3xl text-center mb-7 sm:text-5xl">
                         <h2>Acompanhamento</h2>
                         <h2>Profissional</h2>
                     </div>
                 </div>
 
-                <div class="bg-[url(./assets/Amigos-grad.jpg)] bg-cover bg-no-repeat w-[330px] h-[300px] flex flex-col items-center justify-end rounded-xl flex-shrink-0">
-                    <div class="text-white bebasFont text-3xl text-center mb-7">
+                <div class="bg-[url(./assets/Amigos-grad.jpg)] bg-cover bg-no-repeat w-[330px] h-[300px] flex flex-col items-center justify-end rounded-xl flex-shrink-0 sm:w-[430px] sm:h-[430px]">
+                    <div class="text-white bebasFont text-3xl text-center mb-7 sm:text-5xl">
                         <h2>Ambiente</h2>
                         <h2>Motivador</h2>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!--version PC-->
+            <div class="flex mt-20 gap-20">
+
+                <div class="bg-[url(./assets/Ambiente-grad.jpg)] bg-cover bg-no-repeat w-[360px] h-[360px] flex flex-col items-center justify-end rounded-xl shadow-2xl shadow-[#2288C7] transition-all duration-500 hover:scale-110 cursor-pointer">
+                    <div class="text-white bebasFont text-3xl text-center mb-7 sm:text-5xl">
+                        <h2>Ambiente</h2>
+                        <h2>Moderno</h2>
+                    </div>
+                </div>
+
+                <div class="bg-[url(./assets/Personal-grad.jpg)] bg-cover bg-no-repeat w-[360px] h-[360px] flex flex-col items-center justify-end rounded-xl shadow-2xl shadow-[#2288C7] transition-all duration-500 hover:scale-110 cursor-pointer">
+                    <div class="text-white bebasFont text-3xl text-center mb-7 sm:text-5xl">
+                        <h2>Acompanhamento</h2>
+                        <h2>Profissional</h2>
+                    </div>
+                </div>
+
+                <div class="bg-[url(./assets/Amigos-grad.jpg)] bg-cover bg-no-repeat w-[360px] h-[360px] flex flex-col items-center justify-end rounded-xl shadow-2xl shadow-[#2288C7] transition-all duration-500 hover:scale-110 cursor-pointer">
+                    <div class="text-white bebasFont text-3xl text-center mb-7 sm:text-5xl">
+                        <h2>Ambiente</h2>
+                        <h2>Motivador</h2>
+                    </div>
+                </div>
+            </div>
+        
     </section>
+
+    
 
     <!--Sessao de PLANOS-->
 
     <section class="mt-10 flex flex-col items-center gap-7" id="planos">
         <div>
-            <h1 class="bebasFont text-center text-[#1E1E1E] text-4xl">Conheça nossos planos</h1>
+            <h1 class="bebasFont text-center text-[#1E1E1E] text-4xl sm:text-5xl lg:text-6xl">Conheça nossos planos</h1>
         </div>
 
-        <div class="flex flex-col items-center gap-12">
+        <div class="flex flex-col items-center gap-12 lg:flex-row">
 
             <!--card basico-->
-            <div class="w-[300px] border-yellow-600 border-5 rounded-3xl h-[480px] flex flex-col items-center justify-center gap-2">
-                <h1 class="bebasFont text-3xl text-yellow-600 ">
+            <div class="w-[300px] border-yellow-600 border-5 rounded-3xl h-[480px] flex flex-col items-center justify-center gap-2 lg:w-[360px] lg:h-[560px]">
+                <h1 class="bebasFont text-3xl text-yellow-600 lg:text-4xl">
                     Básico - Bronze
                 </h1>
                 <ul class="flex flex-col gap-2">
                     <li class="flex items-center gap-3">
                         <i class="fa-solid fa-circle-check text-green-600 text-xl"></i>
-                        <p class="bebasFont text-xl text-[#1E1E1E]">Acesso à musculação</p>
+                        <p class="bebasFont text-xl lg:text-2xl text-[#1E1E1E]">Acesso à musculação</p>
                     </li>
 
                     <li class="flex items-center gap-3">
                         <i class="fa-solid fa-circle-check text-green-600 text-xl"></i>
-                        <p class="bebasFont text-xl text-[#1E1E1E]">Avaliação física inicial</p>
+                        <p class="bebasFont text-xl lg:text-2xl text-[#1E1E1E]">Avaliação física inicial</p>
                     </li>
 
                     <li class="flex items-center gap-3">
                         <i class="fa-solid fa-circle-check text-green-600 text-xl"></i>
-                        <p class="bebasFont text-xl text-[#1E1E1E]">Uso livre dos equipamentos</p>
+                        <p class="bebasFont text-xl lg:text-2xl text-[#1E1E1E]">Uso livre dos equipamentos</p>
                     </li>
 
                     <li class="flex items-center gap-3">
                         <i class="fa-solid fa-circle-check text-green-600 text-xl"></i>
-                        <p class="bebasFont text-xl text-[#1E1E1E]">Horários flexíveis</p>
+                        <p class="bebasFont text-xl lg:text-2xl text-[#1E1E1E]">Horários flexíveis</p>
                     </li>
                    
                     <li class="flex items-center gap-3">
                         <i class="fa-solid fa-circle-xmark text-red-600 text-xl"></i>
-                        <p class="bebasFont text-xl line-through text-[#1E1E1E]">Avaliação física periódica</p>
+                        <p class="bebasFont text-xl lg:text-2xl line-through text-[#1E1E1E]">Avaliação física periódica</p>
                     </li>
 
                     <li class="flex items-center gap-3">
@@ -154,17 +210,17 @@
 
                     <li class="flex items-center gap-3">
                         <i class="fa-solid fa-circle-xmark text-red-600 text-xl"></i>
-                        <p class="bebasFont text-xl line-through text-[#1E1E1E]">Suporte na academia</p>
+                        <p class="bebasFont text-xl lg:text-2xl line-through text-[#1E1E1E]">Suporte na academia</p>
                     </li>
 
                     <li class="flex items-center gap-3">
                         <i class="fa-solid fa-circle-xmark text-red-600 text-xl"></i>
-                        <p class="bebasFont text-xl line-through text-[#1E1E1E]">Treino personalizado</p>
+                        <p class="bebasFont text-xl lg:text-2xl line-through text-[#1E1E1E]">Treino personalizado</p>
                     </li>
 
                     <li class="flex items-center gap-3">
                         <i class="fa-solid fa-circle-xmark text-red-600 text-xl"></i>
-                        <p class="bebasFont text-xl line-through text-[#1E1E1E]">Atendimento priorizado</p>
+                        <p class="bebasFont text-xl lg:text-2xl line-through text-[#1E1E1E]">Atendimento priorizado</p>
                     </li>
                 </ul>
 
@@ -173,60 +229,60 @@
                     <h3 class="bebasFont text-4xl text-[#1E1E1E]">79,90</h3>
                 </div>
 
-                <button class="bebasFont text-xl text-[#1E1E1E] bg-yellow-600 w-[200px] h-8 rounded-md cursor-pointer hover:bg-yellow-700 hover:scale-95 transition duration-500">
+                <button class="bebasFont text-xl text-[#1E1E1E] bg-yellow-600 w-[200px] h-8 rounded-md cursor-pointer hover:bg-yellow-700 hover:scale-95 transition duration-500 lg:w-[260px]">
                     Assinar Plano
                 </button>
             </div>
 
             <!--card evolucao-->
-            <div class="w-[300px] border-gray-400 border-5 rounded-3xl h-[480px] flex flex-col items-center justify-center gap-2">
-                <h1 class="bebasFont text-3xl text-gray-400 ">
+            <div class="w-[300px] border-gray-400 border-5 rounded-3xl h-[480px] flex flex-col items-center justify-center gap-2 lg:w-[360px] lg:h-[560px]">
+                <h1 class="bebasFont text-3xl text-gray-400 lg:text-4xl">
                     Evoulação - Prata
                 </h1>
                 <ul class="flex flex-col gap-2">
                     <li class="flex items-center gap-3">
                         <i class="fa-solid fa-circle-check text-green-600 text-xl"></i>
-                        <p class="bebasFont text-xl text-[#1E1E1E]">Acesso à musculação</p>
+                        <p class="bebasFont text-xl lg:text-2xl text-[#1E1E1E]">Acesso à musculação</p>
                     </li>
 
                     <li class="flex items-center gap-3">
                         <i class="fa-solid fa-circle-check text-green-600 text-xl"></i>
-                        <p class="bebasFont text-xl text-[#1E1E1E]">Avaliação física inicial</p>
+                        <p class="bebasFont text-xl lg:text-2xl text-[#1E1E1E]">Avaliação física inicial</p>
                     </li>
 
                     <li class="flex items-center gap-3">
                         <i class="fa-solid fa-circle-check text-green-600 text-xl"></i>
-                        <p class="bebasFont text-xl text-[#1E1E1E]">Uso livre dos equipamentos</p>
+                        <p class="bebasFont text-xl lg:text-2xl text-[#1E1E1E]">Uso livre dos equipamentos</p>
                     </li>
 
                     <li class="flex items-center gap-3">
                         <i class="fa-solid fa-circle-check text-green-600 text-xl"></i>
-                        <p class="bebasFont text-xl text-[#1E1E1E]">Horários flexíveis</p>
+                        <p class="bebasFont text-xl lg:text-2xl text-[#1E1E1E]">Horários flexíveis</p>
                     </li>
                    
                     <li class="flex items-center gap-3">
                         <i class="fa-solid fa-circle-check text-green-600 text-xl"></i>
-                        <p class="bebasFont text-xl text-[#1E1E1E]">Avaliação física periódica</p>
+                        <p class="bebasFont text-xl lg:text-2xl text-[#1E1E1E]">Avaliação física periódica</p>
                     </li>
 
                     <li class="flex items-center gap-3">
                         <i class="fa-solid fa-circle-check text-green-600 text-xl"></i>
-                        <p class="bebasFont text-xl text-[#1E1E1E]">Ajuste de treino mensal</p>
+                        <p class="bebasFont text-xl lg:text-2xl text-[#1E1E1E]">Ajuste de treino mensal</p>
                     </li>
 
                     <li class="flex items-center gap-3">
                         <i class="fa-solid fa-circle-xmark text-red-600 text-xl"></i>
-                        <p class="bebasFont text-xl line-through text-[#1E1E1E]">Suporte na academia</p>
+                        <p class="bebasFont text-xl lg:text-2xl line-through text-[#1E1E1E]">Suporte na academia</p>
                     </li>
 
                     <li class="flex items-center gap-3">
                         <i class="fa-solid fa-circle-xmark text-red-600 text-xl"></i>
-                        <p class="bebasFont text-xl line-through text-[#1E1E1E] ">Treino personalizado</p>
+                        <p class="bebasFont text-xl lg:text-2xl line-through text-[#1E1E1E] ">Treino personalizado</p>
                     </li>
 
                     <li class="flex items-center gap-3">
                         <i class="fa-solid fa-circle-xmark text-red-600 text-xl"></i>
-                        <p class="bebasFont text-xl line-through text-[#1E1E1E]">Atendimento priorizado</p>
+                        <p class="bebasFont text-xl lg:text-2xl line-through text-[#1E1E1E]">Atendimento priorizado</p>
                     </li>
                 </ul>
 
@@ -235,60 +291,60 @@
                     <h3 class="bebasFont text-4xl text-[#1E1E1E]">109,90</h3>
                 </div>
 
-                <button class="bebasFont text-xl text-[#1E1E1E] bg-gray-400 w-[200px] h-8 rounded-md cursor-pointer hover:bg-gray-500 hover:scale-95 transition duration-500">
+                <button class="bebasFont text-xl text-[#1E1E1E] bg-gray-400 w-[200px] h-8 rounded-md cursor-pointer hover:bg-gray-500 hover:scale-95 transition duration-500 lg:w-[260px]">
                     Assinar Plano
                 </button>
             </div>
 
             <!--card performace-->
-            <div class="w-[300px] border-yellow-400 border-5 rounded-3xl h-[480px] flex flex-col items-center justify-center gap-2">
-                <h1 class="bebasFont text-3xl text-yellow-400 font-semibold">
+            <div class="w-[300px] border-yellow-400 border-5 rounded-3xl h-[480px] flex flex-col items-center justify-center gap-2 lg:w-[360px] lg:h-[560px]">
+                <h1 class="bebasFont text-3xl text-yellow-400 lg:text-4xl">
                     Performace - Ouro
                 </h1>
                 <ul class="flex flex-col gap-2">
                     <li class="flex items-center gap-3">
                         <i class="fa-solid fa-circle-check text-green-600 text-xl"></i>
-                        <p class="bebasFont text-xl text-[#1E1E1E]">Acesso à musculação</p>
+                        <p class="bebasFont text-xl lg:text-2xl text-[#1E1E1E]">Acesso à musculação</p>
                     </li>
 
                     <li class="flex items-center gap-3">
                         <i class="fa-solid fa-circle-check text-green-600 text-xl"></i>
-                        <p class="bebasFont text-xl text-[#1E1E1E]">Avaliação física inicial</p>
+                        <p class="bebasFont text-xl lg:text-2xl text-[#1E1E1E]">Avaliação física inicial</p>
                     </li>
 
                     <li class="flex items-center gap-3">
                         <i class="fa-solid fa-circle-check text-green-600 text-xl"></i>
-                        <p class="bebasFont text-xl text-[#1E1E1E]">Uso livre dos equipamentos</p>
+                        <p class="bebasFont text-xl lg:text-2xl text-[#1E1E1E]">Uso livre dos equipamentos</p>
                     </li>
 
                     <li class="flex items-center gap-3">
                         <i class="fa-solid fa-circle-check text-green-600 text-xl"></i>
-                        <p class="bebasFont text-xl text-[#1E1E1E]">Horários flexíveis</p>
+                        <p class="bebasFont text-xl lg:text-2xl text-[#1E1E1E]">Horários flexíveis</p>
                     </li>
                    
                     <li class="flex items-center gap-3">
                         <i class="fa-solid fa-circle-check text-green-600 text-xl"></i>
-                        <p class="bebasFont text-xl text-[#1E1E1E]">Avaliação física periódica</p>
+                        <p class="bebasFont text-xl lg:text-2xl text-[#1E1E1E]">Avaliação física periódica</p>
                     </li>
 
                     <li class="flex items-center gap-3">
                         <i class="fa-solid fa-circle-check text-green-600 text-xl"></i>
-                        <p class="bebasFont text-xl text-[#1E1E1E]">Ajuste de treino mensal</p>
+                        <p class="bebasFont text-xl lg:text-2xl text-[#1E1E1E]">Ajuste de treino mensal</p>
                     </li>
 
                     <li class="flex items-center gap-3">
                         <i class="fa-solid fa-circle-check text-green-600 text-xl"></i>
-                        <p class="bebasFont text-xl text-[#1E1E1E]">Suporte na academia</p>
+                        <p class="bebasFont text-xl lg:text-2xl text-[#1E1E1E]">Suporte na academia</p>
                     </li>
 
                     <li class="flex items-center gap-3">
                         <i class="fa-solid fa-circle-check text-green-600 text-xl"></i>
-                        <p class="bebasFont text-xl  text-[#1E1E1E]">Treino personalizado</p>
+                        <p class="bebasFont text-xl lg:text-2xl  text-[#1E1E1E]">Treino personalizado</p>
                     </li>
 
                     <li class="flex items-center gap-3">
                         <i class="fa-solid fa-circle-check text-green-600 text-xl"></i>
-                        <p class="bebasFont text-xl  text-[#1E1E1E]">Atendimento priorizado</p>
+                        <p class="bebasFont text-xl lg:text-2xl  text-[#1E1E1E]">Atendimento priorizado</p>
                     </li>
                 </ul>
 
@@ -297,7 +353,7 @@
                     <h3 class="bebasFont text-4xl text-[#1E1E1E]">149,90</h3>
                 </div>
 
-                <button class="bebasFont text-xl text-[#1E1E1E] bg-yellow-400 w-[200px] h-8 rounded-md cursor-pointer hover:bg-yellow-500 hover:scale-95 transition duration-500">
+                <button class="bebasFont text-xl text-[#1E1E1E] bg-yellow-400 w-[200px] h-8 rounded-md cursor-pointer hover:bg-yellow-500 hover:scale-95 transition duration-500 lg:w-[260px]">
                     Assinar Plano
                 </button>
             </div>
@@ -308,23 +364,23 @@
     <section class="mt-8 bg-[#1E1E1E] flex flex-col items-center gap-5" id="sobre">
 
         <div class="mt-8">
-            <h1 class="bebasFont text-[#2288C7] text-4xl">Sobre a Academia</h1>
+            <h1 class="bebasFont text-[#2288C7] text-4xl sm:text-5xl sm:mt-5">Sobre a Academia</h1>
         </div>
 
         <div class="flex flex-col items-center">
-            <img src="./assets/Ambiente-grad.jpg" alt="" class="w-[330px] rounded-xl">
+            <img src="./assets/Ambiente-grad.jpg" alt="" class="w-[330px] rounded-xl sm:w-[430px]">
 
-            <p class="max-w-[330px] text-white mondaFont text-justify mt-5 indent-5 mb-12">
+            <p class="max-w-[330px] text-white mondaFont text-justify mt-5 indent-5 mb-12 sm:max-w-[430px] sm:text-xl">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique odio placeat voluptatem nihil velit corrupti ipsa voluptate nisi ea obcaecati. Tempore corporis quae sequi placeat maiores quibusdam nisi architecto fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse molestias nesciunt dolores necessitatibus nobis officia accusamus deserunt incidunt vel enim repudiandae iusto quam aperiam minus modi impedit omnis, eius ut!
             </p>
         </div>
     </section>
 
     <!--CTA da Academia--> 
-    <section  class="bg-[url(./assets/Foto-CTA.jpg)] bg-cover bg-no-repeat bg-[52%_25%] h-[450px] w-[100vw] relative z-10 flex flex-col items-center justify-center ">
+    <section  class="bg-[url(./assets/Foto-CTA.jpg)] bg-cover bg-no-repeat bg-[52%_25%] h-[450px] w-[100%] relative z-10 flex flex-col items-center justify-center ">
 
         <div class=" relative z-50 max-w-[330px] flex flex-col items-center gap-5 mt-10">
-            <h1 class="bebasFont text-5xl text-white text-center">
+            <h1 class="bebasFont text-5xl text-white text-center ">
                 Dê o <span class="text-[#2288C7]">primeiro</span> passo
                 para a sua <span class="text-[#2288C7]">evolução </span>
             </h1>
@@ -334,7 +390,7 @@
                 faça parte da nossa academia.
             </p>
 
-            <button class="bebasFont text-[#2288C7] border-3 border-[#2288C7] rounded-xl h-10 w-56 hover:bg-[#2288C7] hover:text-gray-950 transition-all duration-500 cursor-pointer text-xl tracking-wide ">
+            <button class="bebasFont text-[#2288C7] border-3 border-[#2288C7] rounded-xl h-10 w-56 hover:bg-[#2288C7] hover:text-gray-950 transition-all duration-500 cursor-pointer text-xl tracking-wide sm:w-80 sm:h-15 sm:text-2xl">
                 Matricule-se agora
             </button>
         </div>
@@ -349,23 +405,23 @@
     <section class="flex flex-col items-center mt-10 gap-10" id="local">
 
         <div class="flex flex-col items-center gap-3">
-            <h1 class="bebasFont text-4xl text-[#1E1E1E]">Nosso Horários</h1>
+            <h1 class="bebasFont text-4xl text-[#1E1E1E] sm:text-5xl">Nosso Horários</h1>
 
             <div class="flex flex-col items-center">
-                <p class="mondaFont text-xl">Segunda à Sexta</p>
-                <p class="mondaFont text-xl font-bold">7:00 às 22:00</p>
+                <p class="mondaFont text-xl sm:text-2xl">Segunda à Sexta</p>
+                <p class="mondaFont text-xl font-bold sm:text-2xl">7:00 às 22:00</p>
             </div>
 
             <div class="flex flex-col items-center">
-                 <p class="mondaFont text-xl">Sábados e Domingos</p>
-                <p class="mondaFont text-xl font-bold">8:00 às 20:00</p>
+                 <p class="mondaFont text-xl sm:text-2xl">Sábados e Domingos</p>
+                <p class="mondaFont text-xl font-bold sm:text-2xl">8:00 às 20:00</p>
             </div>
         </div>
 
         <div class="flex flex-col items-center gap-3">
-            <h1 class="bebasFont text-4xl text-[#1E1E1E]">Nossa Localização</h1>
+            <h1 class="bebasFont text-4xl text-[#1E1E1E] sm:text-5xl">Nossa Localização</h1>
             <div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7174.638774534198!2d-46.99956375879977!3d-18.92889042898218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94afba90b4fbc31b%3A0x2c1cb36c54e64bda!2sS%C3%A3o%20Judas%20Tadeu%2C%20Patroc%C3%ADnio%20-%20MG%2C%2038740-000!5e1!3m2!1spt-BR!2sbr!4v1768849783885!5m2!1spt-BR!2sbr" width="330" height="330" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-2xl"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7174.638774534198!2d-46.99956375879977!3d-18.92889042898218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94afba90b4fbc31b%3A0x2c1cb36c54e64bda!2sS%C3%A3o%20Judas%20Tadeu%2C%20Patroc%C3%ADnio%20-%20MG%2C%2038740-000!5e1!3m2!1spt-BR!2sbr!4v1768849783885!5m2!1spt-BR!2sbr" width="430" height="330" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-2xl"></iframe>
             </div>
         </div>
     </section>            
@@ -390,7 +446,7 @@
                 <p class="text-white text-sm">A15 FIT - Todos os direitos reservado, 2026</p>
             </div>
 
-            <div>
+            <div class="mb-5">
                 
                 <p class="text-white text-sm">Desenvolvido por <a href="https://www.instagram.com/lucas_henrib/" class="text-blue-400">@LucasDev</a></p>
             </div>
