@@ -99,7 +99,7 @@
    
 
     <!--Sessao PORQUE TREINAR CONOSCO?-->
-    <section class="flex flex-col justify-center items-center h-[670px] bg-[#1E1E1E] lg:h-[700px]" id="conheca">
+    <section class="flex flex-col justify-center items-center h-[470px] sm:h-[670px] bg-[#1E1E1E] lg:h-[700px]" id="conheca">
 
         <div>
             <h1 class=" bebasFont text-4xl text-center text-[#2288C7] sm:text-5xl lg:text-6xl">Porque treinar conosco?</h1>
@@ -135,7 +135,7 @@
         </div>
 
         <!--version PC-->
-            <div class="flex mt-20 gap-20">
+            <div class="lg:flex lg:mt-20 lg:gap-20 hidden ">
 
                 <div class="bg-[url(./assets/Ambiente-grad.jpg)] bg-cover bg-no-repeat w-[360px] h-[360px] flex flex-col items-center justify-end rounded-xl shadow-2xl shadow-[#2288C7] transition-all duration-500 hover:scale-110 cursor-pointer">
                     <div class="text-white bebasFont text-3xl text-center mb-7 sm:text-5xl">
@@ -361,36 +361,42 @@
     </section>
 
     <!--SOBRE a ACADEMIA-->
-    <section class="mt-8 bg-[#1E1E1E] flex flex-col items-center gap-5" id="sobre">
+    <section class="mt-8 bg-[#1E1E1E] flex flex-col items-center gap-5 lg:h-[600px]" id="sobre">
 
-        <div class="mt-8">
+        <div class="mt-8 lg:hidden">
             <h1 class="bebasFont text-[#2288C7] text-4xl sm:text-5xl sm:mt-5">Sobre a Academia</h1>
         </div>
 
-        <div class="flex flex-col items-center">
-            <img src="./assets/Ambiente-grad.jpg" alt="" class="w-[330px] rounded-xl sm:w-[430px]">
+        <div class="flex flex-col items-center lg:flex-row gap-10 lg:gap-18 lg:mt-20">
+            <img src="./assets/Ambiente-grad.jpg" alt="" class="w-[330px] rounded-xl sm:w-[430px] shadow-2xl shadow-[#2288C7]">
 
-            <p class="max-w-[330px] text-white mondaFont text-justify mt-5 indent-5 mb-12 sm:max-w-[430px] sm:text-xl">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique odio placeat voluptatem nihil velit corrupti ipsa voluptate nisi ea obcaecati. Tempore corporis quae sequi placeat maiores quibusdam nisi architecto fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse molestias nesciunt dolores necessitatibus nobis officia accusamus deserunt incidunt vel enim repudiandae iusto quam aperiam minus modi impedit omnis, eius ut!
-            </p>
+         <div class="flex lg:flex-col">
+             <div class="mt-8 hidden lg:block">
+                <h1 class="bebasFont text-[#2288C7] text-6xl ">Sobre a Academia</h1>
+             </div>
+
+                <p class="max-w-[330px] text-white mondaFont text-justify mt-5 indent-5 mb-12 sm:max-w-[430px] sm:text-xl lg:max-w-[700px]">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique odio placeat voluptatem nihil velit corrupti ipsa voluptate nisi ea obcaecati. Tempore corporis quae sequi placeat maiores quibusdam nisi architecto fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse molestias nesciunt dolores necessitatibus nobis officia accusamus deserunt incidunt vel enim repudiandae iusto quam aperiam minus modi impedit omnis, eius ut!
+                </p>
+         </div>
         </div>
     </section>
 
     <!--CTA da Academia--> 
-    <section  class="bg-[url(./assets/Foto-CTA.jpg)] bg-cover bg-no-repeat bg-[52%_25%] h-[450px] w-[100%] relative z-10 flex flex-col items-center justify-center ">
+    <section  class="bg-[url(./assets/Foto-CTA.jpg)] bg-cover bg-no-repeat bg-[52%_25%] h-[450px] w-[100%] relative z-10 flex flex-col items-center justify-center">
 
-        <div class=" relative z-50 max-w-[330px] flex flex-col items-center gap-5 mt-10">
-            <h1 class="bebasFont text-5xl text-white text-center ">
+        <div class=" relative z-50 max-w-[330px] flex flex-col items-center gap-5 mt-10 lg:max-w-[800px]">
+            <h1 class="bebasFont text-5xl text-white text-center lg:text-6xl">
                 Dê o <span class="text-[#2288C7]">primeiro</span> passo
                 para a sua <span class="text-[#2288C7]">evolução </span>
             </h1>
 
-            <p class="mondaFont text-white text-xl text-center">
+            <p class="mondaFont text-white text-xl text-center lg:text-2xl">
                 Não perca tempo! Garanta sua vaga e 
                 faça parte da nossa academia.
             </p>
 
-            <button class="bebasFont text-[#2288C7] border-3 border-[#2288C7] rounded-xl h-10 w-56 hover:bg-[#2288C7] hover:text-gray-950 transition-all duration-500 cursor-pointer text-xl tracking-wide sm:w-80 sm:h-15 sm:text-2xl">
+            <button class="bebasFont text-[#2288C7] border-3 border-[#2288C7] rounded-xl h-10 w-56 hover:bg-[#2288C7] hover:text-gray-950 transition-all duration-500 cursor-pointer text-xl tracking-wide sm:w-80 sm:h-15 sm:text-2xl lg:w-96 lg:h-16 lg:text-3xl">
                 Matricule-se agora
             </button>
         </div>
@@ -402,10 +408,10 @@
 
 
     <!--Localizaçao e horario de funcionamento-->
-    <section class="flex flex-col items-center mt-10 gap-10" id="local">
+    <section class="flex flex-col items-center mt-10 gap-10 lg:gap-16 lg:flex-row lg:justify-center" id="local">
 
-        <div class="flex flex-col items-center gap-3">
-            <h1 class="bebasFont text-4xl text-[#1E1E1E] sm:text-5xl">Nosso Horários</h1>
+        <div class="flex flex-col items-center gap-3 lg:gap-10 lg:mb-26">
+            <h1 class="bebasFont text-4xl text-[#1E1E1E] sm:text-5xl lg:text-6xl ">Nosso Horários</h1>
 
             <div class="flex flex-col items-center">
                 <p class="mondaFont text-xl sm:text-2xl">Segunda à Sexta</p>
@@ -419,19 +425,20 @@
         </div>
 
         <div class="flex flex-col items-center gap-3">
-            <h1 class="bebasFont text-4xl text-[#1E1E1E] sm:text-5xl">Nossa Localização</h1>
+            <h1 class="bebasFont text-4xl text-[#1E1E1E] sm:text-5xl lg:text-6xl">Nossa Localização</h1>
             <div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7174.638774534198!2d-46.99956375879977!3d-18.92889042898218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94afba90b4fbc31b%3A0x2c1cb36c54e64bda!2sS%C3%A3o%20Judas%20Tadeu%2C%20Patroc%C3%ADnio%20-%20MG%2C%2038740-000!5e1!3m2!1spt-BR!2sbr!4v1768849783885!5m2!1spt-BR!2sbr" width="430" height="330" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-2xl"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7174.638774534198!2d-46.99956375879977!3d-18.92889042898218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94afba90b4fbc31b%3A0x2c1cb36c54e64bda!2sS%C3%A3o%20Judas%20Tadeu%2C%20Patroc%C3%ADnio%20-%20MG%2C%2038740-000!5e1!3m2!1spt-BR!2sbr!4v1768849783885!5m2!1spt-BR!2sbr" width="430" height="330" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-2xl h-[300px] w-[500px]"></iframe>
             </div>
         </div>
     </section>            
 
-    <footer class="bg-[#1E1E1E] flex flex-col items-center mt-15">
-            <div class="w-24 mt-5">
+    <!--Rodapé-->
+    <footer class="bg-[#1E1E1E] flex flex-col items-center mt-15 lg:flex-row lg:justify-center lg:gap-30 lg:h-[110px]">
+            <div class="w-24 mt-5 lg:mt-1">
                 <img src="./assets/logo.png" alt="">
             </div>
 
-            <ul class="flex flex-col gap-2 mb-7">
+            <ul class="flex flex-col gap-2 mb-7 lg:flex-row lg:mt-4 lg:gap-5">
                 <li class="flex flex-row items-center gap-2">
                     <i class="fa-brands fa-whatsapp text-2xl text-green-500"></i>
                     <p class="text-white">(34) 9999-9999</p>
@@ -446,7 +453,7 @@
                 <p class="text-white text-sm">A15 FIT - Todos os direitos reservado, 2026</p>
             </div>
 
-            <div class="mb-5">
+            <div class="mb-5 lg:mb-3">
                 
                 <p class="text-white text-sm">Desenvolvido por <a href="https://www.instagram.com/lucas_henrib/" class="text-blue-400">@LucasDev</a></p>
             </div>

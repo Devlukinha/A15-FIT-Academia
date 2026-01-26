@@ -13,7 +13,7 @@ setInterval(() => {
         indexSlide = 0;
     }
 
-    if(window.innerWidth >= 672) {
+    if(window.innerWidth >= 600) {
         larguraSlide = 430;
     }
     else {
